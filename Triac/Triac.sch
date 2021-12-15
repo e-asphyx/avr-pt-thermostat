@@ -1,0 +1,420 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR01
+U 1 1 61B9FF2D
+P 1450 3850
+F 0 "#PWR01" H 1450 3600 50  0001 C CNN
+F 1 "GND" H 1455 3677 50  0000 C CNN
+F 2 "" H 1450 3850 50  0001 C CNN
+F 3 "" H 1450 3850 50  0001 C CNN
+	1    1450 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3850 1450 3800
+Wire Wire Line
+	1450 3800 1350 3800
+$Comp
+L power:+3.3V #PWR02
+U 1 1 61BAEA94
+P 1500 3200
+F 0 "#PWR02" H 1500 3050 50  0001 C CNN
+F 1 "+3.3V" H 1515 3373 50  0000 C CNN
+F 2 "" H 1500 3200 50  0001 C CNN
+F 3 "" H 1500 3200 50  0001 C CNN
+	1    1500 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3200 1500 3300
+Wire Wire Line
+	1500 3300 1350 3300
+Text Label 1450 3700 0    50   ~ 0
+~AC_SW
+Text Label 1450 3600 0    50   ~ 0
+ZC
+Wire Wire Line
+	1450 3600 1350 3600
+Wire Wire Line
+	1450 3700 1350 3700
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61C3533D
+P 8400 5600
+F 0 "H1" H 8500 5646 50  0000 L CNN
+F 1 "MountingHole" H 8500 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8400 5600 50  0001 C CNN
+F 3 "~" H 8400 5600 50  0001 C CNN
+	1    8400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61C3BEFE
+P 9100 5600
+F 0 "H3" H 9200 5646 50  0000 L CNN
+F 1 "MountingHole" H 9200 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9100 5600 50  0001 C CNN
+F 3 "~" H 9100 5600 50  0001 C CNN
+	1    9100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61C3C5EA
+P 9800 5600
+F 0 "H4" H 9900 5646 50  0000 L CNN
+F 1 "MountingHole" H 9900 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 5600 50  0001 C CNN
+F 3 "~" H 9800 5600 50  0001 C CNN
+	1    9800 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61C4596C
+P 8400 5850
+F 0 "H2" H 8500 5896 50  0000 L CNN
+F 1 "MountingHole" H 8500 5805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 8400 5850 50  0001 C CNN
+F 3 "~" H 8400 5850 50  0001 C CNN
+	1    8400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 61CC4ABB
+P 1150 3600
+F 0 "J1" H 1068 3075 50  0000 C CNN
+F 1 "Conn_01x06" H 1068 3166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1150 3600 50  0001 C CNN
+F 3 "~" H 1150 3600 50  0001 C CNN
+	1    1150 3600
+	-1   0    0    1   
+$EndComp
+Text Label 1450 3500 0    50   ~ 0
+SCL
+Text Label 1450 3400 0    50   ~ 0
+SDA
+Wire Wire Line
+	1450 3400 1350 3400
+Wire Wire Line
+	1450 3500 1350 3500
+$Comp
+L Triac_Thyristor:BT138-600 Q1
+U 1 1 61B1D6FC
+P 5850 2200
+F 0 "Q1" H 5978 2246 50  0000 L CNN
+F 1 "BT138-600" H 5978 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6050 2125 50  0001 L CIN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 5850 2200 50  0001 L CNN
+	1    5850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 61B235B1
+P 5050 1850
+F 0 "R5" V 4843 1850 50  0000 C CNN
+F 1 "360" V 4934 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4980 1850 50  0001 C CNN
+F 3 "~" H 5050 1850 50  0001 C CNN
+	1    5050 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 1850 5300 1850
+Wire Wire Line
+	5850 2050 5850 1850
+$Comp
+L Device:R R7
+U 1 1 61B2C4E5
+P 6500 2100
+F 0 "R7" H 6570 2146 50  0000 L CNN
+F 1 "39" H 6570 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6430 2100 50  0001 C CNN
+F 3 "~" H 6500 2100 50  0001 C CNN
+	1    6500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61B2D53D
+P 6500 2600
+F 0 "C2" H 6615 2646 50  0000 L CNN
+F 1 "10n" H 6615 2555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L18.0mm_W6.0mm_P15.00mm_FKS3_FKP3" H 6538 2450 50  0001 C CNN
+F 3 "~" H 6500 2600 50  0001 C CNN
+	1    6500 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2450 6500 2250
+Wire Wire Line
+	6500 1850 5850 1850
+Wire Wire Line
+	6500 1950 6500 1850
+Connection ~ 5850 1850
+Wire Wire Line
+	6500 2750 6500 2850
+Wire Wire Line
+	6500 2850 5850 2850
+Wire Wire Line
+	5300 2850 5300 2750
+Connection ~ 5300 1850
+$Comp
+L Device:C C1
+U 1 1 61B30A58
+P 5300 2600
+F 0 "C1" H 5415 2646 50  0000 L CNN
+F 1 "50n" H 5415 2555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L18.0mm_W6.0mm_P15.00mm_FKS3_FKP3" H 5338 2450 50  0001 C CNN
+F 3 "~" H 5300 2600 50  0001 C CNN
+	1    5300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2450 5300 1850
+Wire Wire Line
+	5850 2350 5850 2850
+Connection ~ 5850 2850
+Wire Wire Line
+	5850 2850 5300 2850
+Text Label 6650 1850 0    50   ~ 0
+AC_L
+Text Label 6650 2850 0    50   ~ 0
+AC_OUT
+Wire Wire Line
+	6650 2850 6500 2850
+Connection ~ 6500 2850
+Wire Wire Line
+	6650 1850 6500 1850
+Connection ~ 6500 1850
+$Comp
+L power:+3.3V #PWR05
+U 1 1 61AD7D27
+P 4050 1600
+F 0 "#PWR05" H 4050 1450 50  0001 C CNN
+F 1 "+3.3V" H 4065 1773 50  0000 C CNN
+F 2 "" H 4050 1600 50  0001 C CNN
+F 3 "" H 4050 1600 50  0001 C CNN
+	1    4050 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2300 4200 2300
+Wire Wire Line
+	4050 2000 4050 2100
+Wire Wire Line
+	4050 2100 4200 2100
+Wire Wire Line
+	4050 1600 4050 1700
+$Comp
+L Device:R R2
+U 1 1 61B36F7A
+P 4050 1850
+F 0 "R2" H 4120 1896 50  0000 L CNN
+F 1 "330" H 4120 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3980 1850 50  0001 C CNN
+F 3 "~" H 4050 1850 50  0001 C CNN
+	1    4050 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1850 4900 1850
+Wire Wire Line
+	4800 2100 4800 1850
+Wire Wire Line
+	5700 2300 4800 2300
+$Comp
+L Relay_SolidState:MOC3021M U2
+U 1 1 61B20E1D
+P 4500 2200
+F 0 "U2" H 4500 2525 50  0000 C CNN
+F 1 "MOC3021M" H 4500 2434 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4300 2000 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MOC3023M-D.PDF" H 4500 2200 50  0001 L CNN
+	1    4500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1850 5350 1850
+Wire Wire Line
+	5850 1850 5650 1850
+$Comp
+L Device:R R6
+U 1 1 61B24502
+P 5500 1850
+F 0 "R6" V 5293 1850 50  0000 C CNN
+F 1 "470" V 5384 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5430 1850 50  0001 C CNN
+F 3 "~" H 5500 1850 50  0001 C CNN
+	1    5500 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 61AD765C
+P 3950 3750
+F 0 "#PWR03" H 3950 3600 50  0001 C CNN
+F 1 "+3.3V" H 3965 3923 50  0000 C CNN
+F 2 "" H 3950 3750 50  0001 C CNN
+F 3 "" H 3950 3750 50  0001 C CNN
+	1    3950 3750
+	1    0    0    -1  
+$EndComp
+Text Label 4950 3700 2    50   ~ 0
+AC_L
+Text Label 4050 2300 2    50   ~ 0
+~AC_SW
+$Comp
+L Isolator:4N25 U1
+U 1 1 61AC0660
+P 4350 4450
+F 0 "U1" H 4350 4775 50  0000 C CNN
+F 1 "4N25" H 4350 4684 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 4150 4250 50  0001 L CIN
+F 3 "https://www.vishay.com/docs/83725/4n25.pdf" H 4350 4450 50  0001 L CNN
+	1    4350 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4250 4650 4250
+Wire Wire Line
+	4650 4250 4650 4350
+Wire Wire Line
+	4950 4550 4650 4550
+$Comp
+L Device:R R3
+U 1 1 61B0CDAD
+P 4950 3950
+F 0 "R3" H 5020 3996 50  0000 L CNN
+F 1 "15k" H 5020 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 4880 3950 50  0001 C CNN
+F 3 "~" H 4950 3950 50  0001 C CNN
+	1    4950 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4100 4950 4250
+Wire Wire Line
+	4950 3700 4950 3800
+Text Label 4950 5100 2    50   ~ 0
+AC_N
+Wire Wire Line
+	4950 4550 4950 4650
+$Comp
+L Device:R R1
+U 1 1 61B100B1
+P 3950 3950
+F 0 "R1" H 4020 3996 50  0000 L CNN
+F 1 "4.7k" H 4020 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3880 3950 50  0001 C CNN
+F 3 "~" H 3950 3950 50  0001 C CNN
+	1    3950 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4450 3950 4450
+Wire Wire Line
+	3950 4450 3950 4100
+Wire Wire Line
+	3950 3750 3950 3800
+$Comp
+L power:GND #PWR04
+U 1 1 61B12CCC
+P 3950 4600
+F 0 "#PWR04" H 3950 4350 50  0001 C CNN
+F 1 "GND" H 3955 4427 50  0000 C CNN
+F 2 "" H 3950 4600 50  0001 C CNN
+F 3 "" H 3950 4600 50  0001 C CNN
+	1    3950 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4550 3950 4550
+Wire Wire Line
+	3950 4550 3950 4600
+Text Label 3850 4450 2    50   ~ 0
+ZC
+Wire Wire Line
+	3850 4450 3950 4450
+Connection ~ 3950 4450
+$Comp
+L Device:R R4
+U 1 1 61B2BC05
+P 4950 4800
+F 0 "R4" H 5020 4846 50  0000 L CNN
+F 1 "15k" H 5020 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" V 4880 4800 50  0001 C CNN
+F 3 "~" H 4950 4800 50  0001 C CNN
+	1    4950 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4950 4950 5100
+$Comp
+L Diode:1N4148WS D1
+U 1 1 61C52741
+P 4950 4400
+F 0 "D1" H 4950 4183 50  0000 C CNN
+F 1 "1N4148WS" H 4950 4274 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 4950 4225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 4950 4400 50  0001 C CNN
+	1    4950 4400
+	0    -1   1    0   
+$EndComp
+Connection ~ 4950 4250
+Connection ~ 4950 4550
+Text Label 9000 3050 2    50   ~ 0
+AC_OUT
+Text Label 9000 3150 2    50   ~ 0
+AC_N
+Text Label 9000 3350 2    50   ~ 0
+AC_L
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 61D872C5
+P 9300 3150
+F 0 "J2" H 9380 3142 50  0000 L CNN
+F 1 "Conn_01x04" H 9380 3051 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03504HBLU_1x04_P5.00mm_Horizontal" H 9300 3150 50  0001 C CNN
+F 3 "~" H 9300 3150 50  0001 C CNN
+	1    9300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 3050 9100 3050
+Wire Wire Line
+	9000 3150 9100 3150
+Wire Wire Line
+	9100 3250 9100 3150
+Connection ~ 9100 3150
+Wire Wire Line
+	9100 3350 9000 3350
+$Comp
+L Mechanical:Heatsink HS1
+U 1 1 61C066C1
+P 9800 4900
+F 0 "HS1" H 9942 5021 50  0000 L CNN
+F 1 "Heatsink" H 9942 4930 50  0000 L CNN
+F 2 "Thermostat:SK610-94SA" H 9812 4900 50  0001 C CNN
+F 3 "~" H 9812 4900 50  0001 C CNN
+	1    9800 4900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

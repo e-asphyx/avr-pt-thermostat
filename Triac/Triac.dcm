@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L6234
+D Three phase motor driver
+F https://www.st.com/resource/en/datasheet/cd00000046.pdf
+$ENDCMP
+#
+#End Doc Library
