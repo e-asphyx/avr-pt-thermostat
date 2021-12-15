@@ -120,7 +120,7 @@ U 1 1 61B1D6FC
 P 5850 2200
 F 0 "Q1" H 5978 2246 50  0000 L CNN
 F 1 "BT138-600" H 5978 2155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6050 2125 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 6050 2125 50  0001 L CIN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BT138_SER_D_E.pdf" H 5850 2200 50  0001 L CNN
 	1    5850 2200
 	1    0    0    -1  
@@ -380,11 +380,11 @@ F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 4950 4400 50  0001 C CNN
 $EndComp
 Connection ~ 4950 4250
 Connection ~ 4950 4550
-Text Label 9000 3050 2    50   ~ 0
+Text Label 9000 3350 2    50   ~ 0
 AC_OUT
 Text Label 9000 3150 2    50   ~ 0
 AC_N
-Text Label 9000 3350 2    50   ~ 0
+Text Label 9000 3050 2    50   ~ 0
 AC_L
 $Comp
 L Connector_Generic:Conn_01x04 J2
@@ -412,7 +412,7 @@ U 1 1 61C066C1
 P 9800 4900
 F 0 "HS1" H 9942 5021 50  0000 L CNN
 F 1 "Heatsink" H 9942 4930 50  0000 L CNN
-F 2 "Thermostat:SK610-94SA" H 9812 4900 50  0001 C CNN
+F 2 "Thermostat:SK64-37.5" H 9812 4900 50  0001 C CNN
 F 3 "~" H 9812 4900 50  0001 C CNN
 	1    9800 4900
 	1    0    0    -1  
