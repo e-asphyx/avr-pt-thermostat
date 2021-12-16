@@ -1770,7 +1770,7 @@ U 1 1 61C3533D
 P 8400 5600
 F 0 "H1" H 8500 5646 50  0000 L CNN
 F 1 "MountingHole" H 8500 5555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8400 5600 50  0001 C CNN
+F 2 "Thermostat:MountingHole_3.2mm_M3" H 8400 5600 50  0001 C CNN
 F 3 "~" H 8400 5600 50  0001 C CNN
 	1    8400 5600
 	1    0    0    -1  
@@ -1781,7 +1781,7 @@ U 1 1 61C3BEFE
 P 9100 5600
 F 0 "H3" H 9200 5646 50  0000 L CNN
 F 1 "MountingHole" H 9200 5555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9100 5600 50  0001 C CNN
+F 2 "Thermostat:MountingHole_3.2mm_M3" H 9100 5600 50  0001 C CNN
 F 3 "~" H 9100 5600 50  0001 C CNN
 	1    9100 5600
 	1    0    0    -1  
@@ -1792,7 +1792,7 @@ U 1 1 61C3C5EA
 P 9800 5600
 F 0 "H4" H 9900 5646 50  0000 L CNN
 F 1 "MountingHole" H 9900 5555 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 9800 5600 50  0001 C CNN
+F 2 "Thermostat:MountingHole_3.2mm_M3" H 9800 5600 50  0001 C CNN
 F 3 "~" H 9800 5600 50  0001 C CNN
 	1    9800 5600
 	1    0    0    -1  
@@ -1803,7 +1803,7 @@ U 1 1 61C4596C
 P 8400 5850
 F 0 "H2" H 8500 5896 50  0000 L CNN
 F 1 "MountingHole" H 8500 5805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 8400 5850 50  0001 C CNN
+F 2 "Thermostat:MountingHole_3.2mm_M3" H 8400 5850 50  0001 C CNN
 F 3 "~" H 8400 5850 50  0001 C CNN
 	1    8400 5850
 	1    0    0    -1  
